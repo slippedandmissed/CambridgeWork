@@ -1,0 +1,7 @@
+package uk.ac.cam.jbs52.linkedlists;
+
+public interface OopList<T> {
+	
+	void addFirst(T element);
+
+}

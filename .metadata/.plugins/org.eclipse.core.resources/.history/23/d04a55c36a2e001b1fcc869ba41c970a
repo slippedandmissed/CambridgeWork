@@ -1,0 +1,36 @@
+package uk.ac.cam.jbs52.linkedlists;
+
+public class ArrayedList<T> implements OopList<T> {
+	
+	private Object[] array;
+	private int length;
+	
+	public ArrayedList(int size) {
+		array = new Object[size];
+		length = 0;
+	}
+
+	@Override
+	public void addFirst(T element) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public T removeFirst() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public T get(int n) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int length() {
+		return array.length
+	}
+
+}

@@ -1,0 +1,15 @@
+package uk.ac.cam.jbs52.linkedlists;
+
+public interface OopList<T> {
+	
+	public void addFirst(T element);
+	
+	public T removeFirst();
+	
+	public T get(int n);
+	
+	public int length();
+	
+	public void reverse()l
+
+}

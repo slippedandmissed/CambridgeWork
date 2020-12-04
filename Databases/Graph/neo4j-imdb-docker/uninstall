@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker rm --force neo4j
+docker volume rm neo4jvol

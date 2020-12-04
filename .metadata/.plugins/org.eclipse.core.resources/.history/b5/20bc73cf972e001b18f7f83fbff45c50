@@ -1,0 +1,16 @@
+package uk.ac.cam.jbs52.linkedlists;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
+@RunWith(JUnit4.class)
+public class LinkQueueTest {
+
+	@Test
+	public void linkQueue_popIsThree_whenPushOneTwoThree() {
+		LinkQueue<Integer> queue = new LinkQueue<Integer>();
+		
+	}
+
+}

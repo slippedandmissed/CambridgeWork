@@ -1,0 +1,43 @@
+package logic;
+
+import java.util.AbstractList;
+
+public class CollectionArrayList<T> extends AbstractList<T> {
+
+	private Object[] array;
+	private int length = 0;
+	
+	public CollectionArrayList() {
+		array = new Object[1];
+	}
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public T get(int n) {
+		if (n < 0 || n >= length) {
+			throw new IndexOutOfBoundsException();
+		}
+		return (T) array[n];
+	}
+	
+	@Override
+	public void add(int n, T element) {
+		if (n < 0 || n > length) {
+			throw new IndexOutOfBoundsException();
+		}
+		if (length == array.length) {
+		} else {
+			for (int i=length-1; i>n; i--) {
+				array[i+1] = array[i];
+			}
+			array[n] = element;
+		}
+	}
+
+	@Override
+	public int size() {
+		return length;
+	}
+
+
+}

@@ -1,0 +1,24 @@
+package uk.ac.cam.jbs52.chess.pieces;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import uk.ac.cam.jbs52.chess.Board;
+import uk.ac.cam.jbs52.chess.PieceColor;
+import uk.ac.cam.jbs52.chess.Position;
+
+public class King extends Piece {
+	
+	public King(Position piecePosition, PieceColor pieceColor, Board board) {
+		super(piecePosition, pieceColor, board);
+	}
+
+	@Override
+	public List<Position> validNextPositions() {
+	    List<Position> nextPositions = new ArrayList<>();
+	    position.getAllDiagonalMoves(1, board(), nextPositions);
+	    
+	    return nextPositions;
+	}
+
+}

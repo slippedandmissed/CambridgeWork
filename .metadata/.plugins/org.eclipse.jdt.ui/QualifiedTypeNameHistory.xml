@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick1.RaycastHit"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick1.Ray"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.jbs52.linkedlists.LinkList"/>
+    <fullyQualifiedTypeName name="java.lang.NegativeArraySizeException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.jbs52.q9.FunctionalArray"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.jbs52.q9.BinaryTreeNode"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.CubeRobot"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.CompetitionScene"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.SceneGraph"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.Entity"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.CubeRobot"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.TextEntity.ImageStrip"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.TextEntity"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.CameraMotion"/>
+    <fullyQualifiedTypeName name="org.lwjgl.glfw.GLFWCursorPosCallback"/>
+    <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.jbs52.game_of_life.CompositeWorld"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+</qualifiedTypeNameHistroy>

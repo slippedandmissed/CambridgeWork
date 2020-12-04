@@ -1,0 +1,51 @@
+package uk.ac.cam.jbs52.linkedlists;
+
+import static com.google.common.truth.Truth.assertThat;
+import static org.junit.Assert.assertThrows;
+
+import java.util.NoSuchElementException;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
+@RunWith(JUnit4.class)
+public class LinkQueueTest {
+
+	@Test
+	public void linkQueue_popIsThree_whenPushOneTwoThree() {
+		LinkQueue<Integer> queue = new LinkQueue<Integer>();
+		queue.push(1);
+		queue.push(2);
+		queue.push(3);
+		
+		int value = queue.pop();
+		
+		assertThat(value).isEqualTo(3);
+	}
+	
+	@Test
+	public void linkQueue_popIsTwo_whenPushOneTwoThreePop() {
+		LinkQueue<Integer> queue = new LinkQueue<Integer>();
+		queue.push(1);
+		queue.push(2);
+		queue.push(3);
+		queue.pop();
+		
+		int value = queue.pop();
+		
+		assertThat(value).isEqualTo(2);
+
+	}
+	
+	@Test
+	public void linkQueue_popThrowsNoSuchElementExceptionWhenListEmpty() {
+		LinkQueue<Integer> queue = new LinkQueue<Integer>();
+				
+		assertThrows(NoSuchElementException.class, () -> {
+			queue.pop();
+		});
+
+	}
+
+}

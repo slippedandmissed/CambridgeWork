@@ -1,0 +1,27 @@
+package uk.ac.cam.jbs52.chess.pieces;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import uk.ac.cam.jbs52.chess.Board;
+import uk.ac.cam.jbs52.chess.PieceColor;
+import uk.ac.cam.jbs52.chess.Position;
+
+public class Pawn extends Piece {
+
+	
+	public Pawn(Position piecePosition, PieceColor pieceColor, Board board) {
+		super(piecePosition, pieceColor, board);
+		this.name = 'P';
+		this.value = 1;
+	}
+
+	@Override
+	public List<Position> validNextPositions() {
+	    List<Position> nextPositions = new ArrayList<>();
+		computePawnNextPositions(nextPositions);
+	    
+	    return nextPositions;
+	}
+
+}

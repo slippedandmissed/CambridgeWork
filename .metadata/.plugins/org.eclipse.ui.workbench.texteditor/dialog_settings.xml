@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=","/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="true"/>
+		<list key="findhistory">
+			<item value="\t"/>
+			<item value="   "/>
+			<item value="             "/>
+			<item value=" "/>
+			<item value="       "/>
+			<item value="linkList"/>
+			<item value="LinkList"/>
+			<item value="GLFWCursor"/>
+			<item value="normal"/>
+			<item value="skybox"/>
+			<item value="refrac"/>
+			<item value="LINEAR"/>
+			<item value="filter"/>
+			<item value="Bubble"/>
+			<item value="bubble"/>
+		</list>
+		<list key="replacehistory">
+			<item value=","/>
+			<item value=""/>
+			<item value="arrayedList"/>
+			<item value="ArrayedList"/>
+			<item value="Quick"/>
+			<item value="quick"/>
+			<item value="Merge"/>
+			<item value="merge"/>
+			<item value="Integer[]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="751"/>
+		<item key="DIALOG_Y_ORIGIN" value="234"/>
+		<item key="DIALOG_WIDTH" value="352"/>
+		<item key="DIALOG_HEIGHT" value="440"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+</section>

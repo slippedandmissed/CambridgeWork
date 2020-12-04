@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;uk.ac.cam.cl.gfxintro.crsid.tick1&apos; to &apos;uk.ac.cam.cl.gfxintro.jbs52.tick1&apos;&#x0A;- Original project: &apos;tick1&apos;&#x0A;- Original element: &apos;tick1/src/uk.ac.cam.cl.gfxintro.crsid.tick1&apos;&#x0A;- Renamed element: &apos;tick1/src/uk.ac.cam.cl.gfxintro.jbs52.tick1&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;uk.ac.cam.cl.gfxintro.crsid.tick1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;uk.ac.cam.cl.gfxintro.crsid.tick1" name="uk.ac.cam.cl.gfxintro.jbs52.tick1" qualified="false" references="true" stamp="1604628714907" textual="false" version="1.0"/>
+</session>

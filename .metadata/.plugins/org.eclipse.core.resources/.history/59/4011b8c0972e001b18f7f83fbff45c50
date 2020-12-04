@@ -1,0 +1,28 @@
+package uk.ac.cam.jbs52.linkedlists;
+
+public class LinkQueue<T> implements OopQueue<T> {
+
+	private LinkList<T> head;
+	private LinkList<T> tail;
+	
+	public LinkQueue() {
+		head = new LinkList<T>();
+		tail = new LinkList<T>();
+	}
+	
+	@Override
+	public void push(T elt) {
+		tail.addFirst(elt);
+	}
+	
+	@Override
+	public T pop() {
+		if (head.length() == 0) {
+			head = tail;
+			head.reverse();
+			tail = new LinkList<T>();
+		}
+		return head.removeFirst();
+	}
+	
+}
