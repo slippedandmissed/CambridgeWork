@@ -130,7 +130,7 @@ want = pandas.DataFrame(q.rows).assign(Date=lambda df: pandas.to_datetime(df.Dat
 submit = ans.merge(want)[q.want_cols].assign(Date=lambda df: df.Date.astype(str))
 GRADER.submit_answer(q, submit)
 
-# rcParams['figure.figsize'] = 13, 5
+rcParams['figure.figsize'] = 13, 13
 fig, axs = plt.subplots(4, sharex=True)
 fig.suptitle("R versus number infected per 100k")
 plt.xlim(10**0.5, 10**3.05)
@@ -154,5 +154,6 @@ for i, country in enumerate(["United Kingdom", "Italy", "Germany", "US"]):
     axs[i].axvline(x=1000, color="grey", alpha=0.5)
     axs[i].axhspan(halve_every_two_weeks, double_every_two_weeks, alpha=0.1, color="grey")
     axs[i].set_ylim((0, 3))
+    axs[i].set_title(country, position=(0.1, 1.0), y=0.8)
 
 plt.show()
