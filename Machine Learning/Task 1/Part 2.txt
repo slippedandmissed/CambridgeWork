@@ -1,0 +1,10 @@
+horrific: negative
+satisfying: positive
+exploiting: negative
+awesome: positive
+recommend: positive
+unique: positive
+incongruity: negative
+pain: negative
+escapist: positive
+fun: positive
