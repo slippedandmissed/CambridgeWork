@@ -1,7 +1,0 @@
-package package2;
-
-public class OtherClass {
-	
-	static int x = 5;
-
-}

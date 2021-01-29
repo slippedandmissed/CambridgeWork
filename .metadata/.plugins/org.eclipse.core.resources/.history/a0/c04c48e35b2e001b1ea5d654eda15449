@@ -1,5 +1,0 @@
-package uk.ac.cam.jbs52.chess.pieces;
-
-public class Rook extends Piece {
-
-}

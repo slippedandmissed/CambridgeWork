@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=","/>
+		<item key="selection" value="rearr"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
 		<list key="findhistory">
+			<item value="rearr"/>
+			<item value="flat"/>
+			<item value="getTot"/>
+			<item value="collectAs"/>
+			<item value="Exercise1"/>
 			<item value="\t"/>
 			<item value="   "/>
 			<item value="             "/>
@@ -18,11 +23,6 @@
 			<item value="GLFWCursor"/>
 			<item value="normal"/>
 			<item value="skybox"/>
-			<item value="refrac"/>
-			<item value="LINEAR"/>
-			<item value="filter"/>
-			<item value="Bubble"/>
-			<item value="bubble"/>
 		</list>
 		<list key="replacehistory">
 			<item value=","/>
