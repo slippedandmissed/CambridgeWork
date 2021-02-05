@@ -1,0 +1,5 @@
+    INFO: 2021-02-01 16:29:14,866:               log.py:   20: Logging to /home/morgan/Desktop/Cambridge/mdpdf.log
+   DEBUG: 2021-02-01 16:29:14,866:               cli.py:   72: README.md
+    INFO: 2021-02-01 16:29:14,866:         converter.py:   16: README.md
+   DEBUG: 2021-02-01 16:29:14,879:      pdf_renderer.py:  446: printSegment: Cambridge Work
+   DEBUG: 2021-02-01 16:29:14,881:      pdf_renderer.py:   50: 0, [1, 'Cambridge Work', 1, 68.0]

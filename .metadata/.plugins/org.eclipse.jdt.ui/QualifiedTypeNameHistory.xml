@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.NegativeArraySizeException"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.jbs52.q9.FunctionalArray"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.jbs52.q9.BinaryTreeNode"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.CubeRobot"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.CompetitionScene"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.SceneGraph"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.Entity"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.CubeRobot"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.TextEntity.ImageStrip"/>
@@ -23,7 +15,6 @@
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
     <fullyQualifiedTypeName name="uk.ac.cam.jbs52.game_of_life.CompositeWorld"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -31,7 +22,6 @@
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.sentiment_detection.Tokenizer"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.sentiment_detection.Sentiment"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise1.SentimentWithIntensity.Intensity"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise1.SentimentWithIntensity"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise2"/>
@@ -42,22 +32,32 @@
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.Tokenizer"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.Sentiment"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.nio.file.Paths"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.function.Function"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.utils.BestFit.Point"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.utils.BestFit"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.utils.BestFit.Line"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.utils.ChartPlotter"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise4"/>
+    <fullyQualifiedTypeName name="java.math.BigInteger"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise5"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.Sentiment"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise1"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise5"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise1"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise2"/>
 </qualifiedTypeNameHistroy>
