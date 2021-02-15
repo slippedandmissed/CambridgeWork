@@ -3,6 +3,6 @@
     <entry loc="/usr" stamp="1596753608000"/>
     <entry loc="/root/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_14.0.2.v20200815-0932" stamp="1604598956697"/>
     <entry loc="/root/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_14.0.2.v20200815-0932/jre" stamp="1604598956697"/>
-    <entry loc="/usr/lib/jvm/java-8-openjdk-amd64" stamp="1605442378765"/>
-    <entry loc="/usr/lib/jvm/java-11-openjdk-amd64" stamp="1605442361233"/>
+    <entry loc="/usr/lib/jvm/java-8-openjdk-amd64" stamp="1612959228352"/>
+    <entry loc="/usr/lib/jvm/java-11-openjdk-amd64" stamp="1612959207953"/>
 </dirs>

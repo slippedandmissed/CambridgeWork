@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.Entity"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.CubeRobot"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.TextEntity.ImageStrip"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.entities.TextEntity"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.gfxintro.jbs52.tick2.CameraMotion"/>
     <fullyQualifiedTypeName name="org.lwjgl.glfw.GLFWCursorPosCallback"/>
     <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
     <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
@@ -16,7 +11,6 @@
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
     <fullyQualifiedTypeName name="uk.ac.cam.jbs52.game_of_life.CompositeWorld"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
-    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
@@ -48,16 +42,22 @@
     <fullyQualifiedTypeName name="java.math.BigDecimal"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise5"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.Sentiment"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise1"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise5"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise1"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise2"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise6"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.Sentiment"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.IExercise7"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.HMMDataStore"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.HiddenMarkovModel"/>
 </qualifiedTypeNameHistroy>
