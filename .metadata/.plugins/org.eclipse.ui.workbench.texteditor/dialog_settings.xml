@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="loadBioFile"/>
+		<item key="selection" value="AminoAcid"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
 		<list key="findhistory">
+			<item value="DiceRoll"/>
+			<item value="DiceType"/>
 			<item value="loadBioFile"/>
 			<item value="lex"/>
 			<item value="HashMap"/>
@@ -21,10 +23,10 @@
 			<item value="             "/>
 			<item value=" "/>
 			<item value="       "/>
-			<item value="linkList"/>
-			<item value="LinkList"/>
 		</list>
 		<list key="replacehistory">
+			<item value="AminoAcid"/>
+			<item value="Feature"/>
 			<item value=","/>
 			<item value=""/>
 			<item value="arrayedList"/>

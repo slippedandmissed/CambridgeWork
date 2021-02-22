@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
@@ -20,7 +19,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.Tokenizer"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -38,7 +36,6 @@
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise5"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise1"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise5"/>
@@ -54,10 +51,13 @@
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.DiceType"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.HMMDataStore"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise8"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="java.util.function.Function"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise8.CrossValidator"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.IExercise9"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.HMMDataStore"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
 </qualifiedTypeNameHistroy>

@@ -54,8 +54,5 @@ x = [3,4,2,5,7,6,10,8,4]
 heapify(x)
 print(x)
 
-push(x, 11)
-print(x)
-
 print(popmax(x))
 print(x)

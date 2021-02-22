@@ -37,14 +37,16 @@ public class Exercise8Tester {
 			throw new IOException("Cant access the dataset.", e);
 		}
 
+		IExercise7 implementation7 = (IExercise7) new Exercise7();
+		IExercise8 implementation = (IExercise8) new Exercise8();
+		
 		// Use for testing the code
 //		Collections.shuffle(sequenceFiles, new Random(0));
 //		int testSize = sequenceFiles.size() / 10;
 //		List<Path> devSet = sequenceFiles.subList(0, testSize);
 //		List<Path> testSet = sequenceFiles.subList(testSize, 2 * testSize);
 //		List<Path> trainingSet = sequenceFiles.subList(testSize * 2, sequenceFiles.size());
-		// But:
-		// TODO: Replace with cross-validation for the tick.
+		
 
 		Map<Path, HMMDataStore<DiceRoll, DiceType>> corpus = sequenceFiles.stream()
 				.collect(Collectors.toMap(Function.identity(), arg0 -> {
@@ -56,8 +58,6 @@ public class Exercise8Tester {
 					}
 				}));
 
-		IExercise7 implementation7 = (IExercise7) new Exercise7();
-		IExercise8 implementation = (IExercise8) new Exercise8();
 
 		List<Map<Path, HMMDataStore<DiceRoll, DiceType>>> folds = Exercise8.CrossValidator.splitCVRandom(corpus, 10, 0);
 
@@ -98,6 +98,8 @@ public class Exercise8Tester {
 		System.out.println(fOne);
 		System.out.println();
 
+//		HiddenMarkovModel<DiceRoll, DiceType> model = implementation7.estimateHMM(trainingSet);
+//		
 //		HMMDataStore<DiceRoll, DiceType> data = HMMDataStore.loadDiceFile(devSet.get(0));
 //		List<DiceType> predicted = implementation.viterbi(model, data.observedSequence);
 //		System.out.println("True hidden sequence:");
