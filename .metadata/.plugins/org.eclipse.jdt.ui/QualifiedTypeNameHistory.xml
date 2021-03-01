@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
-    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.jbs52.game_of_life.CompositeWorld"/>
-    <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
@@ -15,13 +10,11 @@
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.IExercise2"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.tree.JCTree.LetExpr"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.main.CommandLine.Tokenizer"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.sentiment_detection.Tokenizer"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.nio.file.Paths"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
@@ -49,7 +42,6 @@
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.HiddenMarkovModel"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.IExercise8"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.DiceType"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise8"/>
@@ -58,6 +50,14 @@
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.IExercise9"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.HMMDataStore"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.io.Reader"/>
+    <fullyQualifiedTypeName name="logic.Tokenizer"/>
+    <fullyQualifiedTypeName name="java.io.StringReader"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.nio.file.Path"/>
+    <fullyQualifiedTypeName name="logic.Exercise2"/>
 </qualifiedTypeNameHistroy>
