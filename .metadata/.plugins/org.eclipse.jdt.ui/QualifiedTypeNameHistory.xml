@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.nio.file.Files"/>
-    <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.sentiment_detection.Tokenizer"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.sentiment_detection.Sentiment"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise1.SentimentWithIntensity.Intensity"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise1.SentimentWithIntensity"/>
@@ -43,9 +39,7 @@
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.IExercise8"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.DiceType"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise8"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.jbs52.exercises.Exercise8.CrossValidator"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.IExercise9"/>
     <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.markov_models.HMMDataStore"/>
@@ -55,9 +49,15 @@
     <fullyQualifiedTypeName name="logic.Tokenizer"/>
     <fullyQualifiedTypeName name="java.io.StringReader"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.nio.file.Path"/>
     <fullyQualifiedTypeName name="logic.Exercise2"/>
+    <fullyQualifiedTypeName name="uk.ac.cam.cl.mlrd.exercises.social_networks.IExercise10"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="com.sun.jmx.remote.internal.ArrayQueue"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.LinkedBlockingDeque"/>
 </qualifiedTypeNameHistroy>
