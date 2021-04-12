@@ -14,7 +14,7 @@ import uk.ac.cam.cl.mlrd.exercises.social_networks.IExercise10;
 import uk.ac.cam.cl.mlrd.exercises.social_networks.IExercise12;
 
 public class Exercise12Tester {
-    static final Path graphFile = Paths.get("data/social_networks/facebook_circle.edges");
+    static final Path graphFile = Paths.get("data/social_networks/supervision4.edges");
 
     public static void main(String[] args) throws IOException {
 	IExercise10 ex10 = new Exercise10();
@@ -34,6 +34,8 @@ public class Exercise12Tester {
 	System.out.println("Edge betweennesses:");
 	System.out.println(edgeBetweennesses);
 	System.out.println();
+
+	System.exit(0);
 
 	List<Set<Integer>> clustering = ex12.GirvanNewman(graph, 20);
 	System.out.println("Clusters:");
