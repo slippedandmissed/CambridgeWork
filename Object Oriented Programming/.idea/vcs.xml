@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Chime tasks/game_of_life/game_of_life" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Take Home Test/Mock/take_home_test_turtle" vcs="Git" />
+  </component>
+</project>
