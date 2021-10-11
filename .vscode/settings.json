@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "revwords.h": "c",
+        "stdio.h": "c"
+    }
+}
