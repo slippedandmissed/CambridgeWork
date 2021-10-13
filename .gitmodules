@@ -1,0 +1,3 @@
+[submodule "ECAD/ecad_labs"]
+	path = ECAD/ecad_labs
+	url = jbs52@chime.cl.cam.ac.uk:jbs52/ecad_labs
