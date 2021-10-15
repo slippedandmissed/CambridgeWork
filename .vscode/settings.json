@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "revwords.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "mman.h": "c",
+        "stat.h": "c"
     }
 }
