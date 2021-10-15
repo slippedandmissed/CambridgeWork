@@ -3,6 +3,7 @@
         "revwords.h": "c",
         "stdio.h": "c",
         "mman.h": "c",
-        "stat.h": "c"
+        "stat.h": "c",
+        "tree.h": "c"
     }
 }
