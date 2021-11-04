@@ -1,3 +1,6 @@
 [submodule "ECAD/ecad_labs"]
 	path = ECAD/ecad_labs
 	url = jbs52@chime.cl.cam.ac.uk:jbs52/ecad_labs
+[submodule "Further Java/further_java_ticklet_2"]
+	path = Further Java/further_java_ticklet_2
+	url = jbs52@chime.cl.cam.ac.uk:jbs52/further_java_ticklet_2
