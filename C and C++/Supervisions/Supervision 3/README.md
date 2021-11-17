@@ -147,3 +147,112 @@ Abstract classes cannot be instantiated, so it is likely that their subclasses w
 
 7. 
 
+```c
+int process_file(char *name) {
+    FILE *p = fopen(name, "r");
+    if (p == NULL) return ERR_NOTFOUND;
+    while (...) {
+        ...
+        if (...) {
+            fclose(p);  // Prevent memory leak
+            return ERR_MALFORMED;
+        }
+        process_one_option();
+        ...
+    }
+    flose(p);
+    return SUCCESS;
+}
+```
+
+```c++
+class File {
+    FILE *p;
+
+    public:
+        bool file_found;
+
+        File(char *name) {
+            *p = fopen(name, "r");
+            file_found = (p != NULL);
+        }
+
+        ~File() {
+            if (file_found) {
+                fclose(p);
+            }
+        }
+}
+
+int process_file(char *name) {
+    File file(name);
+    if (!file.file_found) return ERR_NOTFOUND;
+    while (...) {
+        ...
+        if (...) return ERR_MALFORMED;
+        process_one_option();
+        ...
+    }
+    return SUCCESS;
+}
+```
+
+8. 
+
+```c++
+template<typename T> T Stack<T>::pop() {
+    if (index == -1) {
+        cout << "Tried to pop from empty stack" << endl;
+        exit(1);
+    }
+    return array[index--];
+}
+
+template<typename T> Stack<T>::~Stack() {
+    free(array);
+}
+```
+
+9. 
+
+```c++
+Stack(const Stack& s) {
+    memcpy(array, s.array, s.capacity);
+    capacity = s.capacity;
+    index = s.index;
+}
+
+Stack& operator=(const Stack& s) {
+    Stack n = malloc(sizeof(Stack));
+    n.array = s.array;
+    n.capacity = s.capacity;
+    n.index = s.index;
+    return n;
+}
+
+```
+
+10. 
+
+```c++
+template <unsigned A, unsigned B> struct divides {
+    static constexpr bool value = (A % B == 0);
+}
+
+template <unsigned A, unsigned B> struct dividesAny {
+    static constexpr bool value = divides<A,B>::value || dividesAny<A, B-1>::value;
+}
+
+
+template <unsigned A, 2> struct dividesAny {
+    static constexpr bool value = divides<A, 2>::value;
+}
+
+template <unsigned N> struct is_prime {
+    static constexpr bool value = dividesAny<N, N-1>::value;
+}
+```
+
+11. 
+
+Have a large input to the implementation and observe that compilation is very slow but execution is very fast.
