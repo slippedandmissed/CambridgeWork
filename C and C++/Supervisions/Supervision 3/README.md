@@ -1,8 +1,4 @@
-# C & C++ Supervision 2
-
-# Lecture 1
-
-
+# C & C++ Supervision 3
 
 1. 
 
