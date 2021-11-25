@@ -10,3 +10,6 @@
 [submodule "Further Java/further_java_ticklet_4"]
 	path = Further Java/further_java_ticklet_4
 	url = jbs52@chime.cl.cam.ac.uk:jbs52/further_java_ticklet_4
+[submodule "Further Java/further_java_ticklet_5"]
+	path = Further Java/further_java_ticklet_5
+	url = jbs52@chime.cl.cam.ac.uk:jbs52/further_java_ticklet_5
