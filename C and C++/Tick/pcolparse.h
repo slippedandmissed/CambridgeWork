@@ -1,37 +1,42 @@
 #pragma once
 
-#include <vector>
-
 struct TCPPacket
 {
-    uint srcPort;
-    uint dstPort;
-    uint seq;
-    uint ack;
-    uint dataOffset;
-    uint reserved;
-    uint controlBits;
-    uint window;
-    uint checksum;
-    uint urgentPtr;
-    std::string data;
+    unsigned int srcPort;
+    unsigned int dstPort;
+    unsigned int seq;
+    unsigned int ack;
+    unsigned int dataOffset;
+    unsigned int reserved;
+    unsigned int controlBits;
+    unsigned int window;
+    unsigned int checksum;
+    unsigned int urgentPtr;
+    char *data;
+    int dataLength;
 };
 
 struct IPPacket
 {
-    uint version;
-    uint ihl;
-    uint typeOfService;
-    uint totalLength;
-    uint identification;
-    uint flags;
-    uint fragmentOffset;
-    uint ttl;
-    uint protocol;
-    uint headerChecksum;
+    unsigned int version;
+    unsigned int ihl;
+    unsigned int typeOfService;
+    unsigned int totalLength;
+    unsigned int identification;
+    unsigned int flags;
+    unsigned int fragmentOffset;
+    unsigned int ttl;
+    unsigned int protocol;
+    unsigned int headerChecksum;
     char *srcAddr;
     char *dstAddr;
-    TCPPacket data;
+    struct TCPPacket data;
 };
 
-std::vector<IPPacket> parseAllIPPackets(char *path);
+struct Result
+{
+    struct IPPacket *packets;
+    int count;
+};
+
+struct Result parseAllIPPackets(char *path);

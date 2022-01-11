@@ -59,11 +59,16 @@ def load_ip_packets(packet):
 
 
 ip = load_ip_packets(data)
-print(ip[0]["header"]["src_addr"], end=" ")
-print(ip[0]["header"]["dst_addr"], end=" ")
-print(ip[0]["header"]["ihl"], end=" ")
-print(ip[0]["header"]["total_length"], end=" ")
+# print(ip[0]["header"]["src_addr"], end=" ")
+# print(ip[0]["header"]["dst_addr"], end=" ")
+# print(ip[0]["header"]["ihl"], end=" ")
+# print(ip[0]["header"]["total_length"], end=" ")
 
 tcp = load_tcp_packet(ip[0]["data"])
-print(tcp["data_offset"], end=" ")
-print(len(ip))
+# print(tcp["data_offset"], end=" ")
+# print(len(ip))
+
+for index, i in enumerate(ip):
+    tcp = load_tcp_packet(i["data"])
+    lastByte = (b'\x00' + tcp['data'])[-1]
+    print(f"{index} {lastByte} {len(tcp['data'])}")

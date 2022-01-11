@@ -1,6 +1,10 @@
 #include <iostream>
 #include <fstream>
+
+extern "C"
+{
 #include "pcolparse.h"
+}
 
 int main(int argc, char **argv)
 {
@@ -14,12 +18,16 @@ int main(int argc, char **argv)
     char *pathToLog = argv[1];
     char *pathToOutput = argv[2];
 
-    auto packets = parseAllIPPackets(pathToLog);
+    Result result = parseAllIPPackets(pathToLog);
 
     auto file = std::ofstream(pathToOutput);
 
-    for (auto packet : packets) {
-        file << packet.data.data;
+    for (int i = 0; i < result.count; i++)
+    {
+        for (int j = 0; j < result.packets[i].data.dataLength; j++)
+        {
+            file << result.packets[i].data.data[j];
+        }
     }
 
     file.close();
