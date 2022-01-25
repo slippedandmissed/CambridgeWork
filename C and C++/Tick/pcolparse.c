@@ -14,6 +14,7 @@ unsigned int readUintFromFile(FILE *file, unsigned int count)
     {
         result = (result << 8 * sizeof(char)) + ((unsigned char)buf[i]);
     }
+    free(buf);
     return result;
 }
 
