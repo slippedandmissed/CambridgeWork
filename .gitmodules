@@ -25,3 +25,6 @@
 [submodule "Group Project/DiscordBot"]
 	path = Group Project/DiscordBot
 	url = git@github.com:Group-Charlie-2022/DiscordBot.git
+[submodule "Group Project/Empathizer"]
+	path = Group Project/Empathizer
+	url = git@github.com:Group-Charlie-2022/Empathizer.git
