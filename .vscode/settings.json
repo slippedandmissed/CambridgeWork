@@ -51,5 +51,8 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "cstring": "cpp"
-    }
+    },
+    "cSpell.words": [
+        "Kaggle"
+    ]
 }

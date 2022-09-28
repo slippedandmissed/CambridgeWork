@@ -1,0 +1,7 @@
+make all -f /home/morgan/Cambridge/C and C++/lab3/Makefile --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/morgan/Cambridge'
+cc -Wall -g -c list.c 
+cc -Wall -g -c lab3.c
+cc -o lab3 list.o lab3.o
+make: Leaving directory '/home/morgan/Cambridge'
+ 
