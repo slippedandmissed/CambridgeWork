@@ -1,0 +1,6 @@
+# **lambda** # $f$ : `Bool` $\rightarrow$ `Bool` $\vdash$ $\lambda x$ : `Bool` . $f$(if $x$ then `false` else $x$) : `Bool` $\rightarrow$ `Bool`
+  # **app** # $f$ : `Bool` $\rightarrow$ `Bool`, $x$ : `Bool` $\vdash$ $f$(if $x$ then `false` else $x$) : `Bool` $\rightarrow$ `Bool`
+    # **if** # $f$ : `Bool` $\rightarrow$ `Bool`, $x$ : `Bool` $\vdash$ if $x$ then `false` else $x$ : `Bool`
+      # **var** #  $f$ : `Bool` $\rightarrow$ `Bool`, $x$ : `Bool` $\vdash$ $x$ : `Bool`
+      # **false** #  $f$ : `Bool` $\rightarrow$ `Bool`, $x$ : `Bool` $\vdash$ `false` : `Bool`
+      # **var** #  $f$ : `Bool` $\rightarrow$ `Bool`, $x$ : `Bool` $\vdash$ $x$ : `Bool`

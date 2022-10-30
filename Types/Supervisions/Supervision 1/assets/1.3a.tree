@@ -1,0 +1,5 @@
+# **app** # $f$ : `Bool` $\rightarrow$ `Bool` $\vdash$ $f$(if `false` then `true` else `false`) : `Bool`
+  # **if** # $f$ : `Bool` $\rightarrow$ `Bool` $\vdash$ if `false` then `true` else `false` : `Bool`
+    # **false** # $f$ : `Bool` $\rightarrow$ `Bool` $\vdash$ `false` : `Bool`
+    # **false** # $f$ : `Bool` $\rightarrow$ `Bool` $\vdash$ `true` : `Bool`
+    # **true** # $f$ : `Bool` $\rightarrow$ `Bool` $\vdash$ `false` : `Bool`
