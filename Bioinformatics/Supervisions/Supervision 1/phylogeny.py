@@ -323,12 +323,12 @@ def neighbor_joining(D, new_node_ctr=0):
 #     "l": {"i": 22, "j": 13, "k": 13, "l": 0}
 # }
 
-D = {
-    "A": {"A": 0, "B": 6, "C": 9, "D": 14},
-    "B": {"A": 6, "B": 0, "C": 5, "D": 10},
-    "C": {"A": 9, "B": 5, "C": 0, "D": 9},
-    "D": {"A": 14, "B": 10, "C": 9, "D": 0}
-}
+# D = {
+#     "A": {"A": 0, "B": 6, "C": 9, "D": 14},
+#     "B": {"A": 6, "B": 0, "C": 5, "D": 10},
+#     "C": {"A": 9, "B": 5, "C": 0, "D": 9},
+#     "D": {"A": 14, "B": 10, "C": 9, "D": 0}
+# }
 
 # D = {
 #     "i": {"i": 0, "j": 3, "k": 4, "l": 3},
@@ -337,6 +337,15 @@ D = {
 #     "l": {"i": 3, "j": 5, "k": 2, "l": 0}
 # }
 
+D = {
+    "A": {"A": 0, "B": 8, "C": 7, "D": 10, "E": 8},
+    "B": {"A": 8, "B": 0, "C": 5, "D": 1, "E": 9},
+    "C": {"A": 7, "B": 5, "C": 0, "D": 4, "E": 10},
+    "D": {"A": 10, "B": 1, "C": 4, "D": 0, "E": 11},
+    "E": {"A": 8, "B": 9, "C": 10, "D": 11, "E": 8},
+}
+
+
 
 # x = additive_phylogeny(D)
 # x = upgma(D)
@@ -344,6 +353,6 @@ D = {
 # print(x)
 # x.match_against(D)
 
-print(additive_phylogeny(D))
+# print(additive_phylogeny(D))
 print(upgma(D))
-print(neighbor_joining(D))
+# print(neighbor_joining(D))
