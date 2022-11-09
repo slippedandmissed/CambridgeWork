@@ -1,0 +1,36 @@
+
+\documentclass[12pt,a4paper,twoside,openright]{report}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage[a4paper, margin=25mm]{geometry}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\usepackage{imakeidx}
+\usepackage[backend=biber]{biblatex}
+\usepackage{xcolor}
+
+\raggedbottom
+\sloppy
+\clubpenalty1000%
+\widowpenalty1000%
+
+\renewcommand{\baselinestretch}{1.1}
+
+\addbibresource{refs.bib}
+\makeindex[intoc]
+
+\begin{document}
+
+\newcommand{\todo}{\textcolor{red}{\textbf{\texttt{// TODO}}}}
+
+\input{title.tex}
+\input{declaration_of_originality.tex}
+\input{proforma.tex}
+\input{contents.tex}
+\input{chapters.tex}
+\input{bibliography.tex}
+\input{appendices.tex}
+\input{index.tex}
+\input{proposal.tex}
+
+\end{document}
