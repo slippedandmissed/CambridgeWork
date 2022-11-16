@@ -1,1 +1,101 @@
 \chapter{Introduction}
+
+The \idx{Travelling Salesman Problem} is infamous in the field of Complexity Theory. In plain English, the problem can be described as follows:
+
+\begin{quote}
+  Given a set of cities, find a \idx{tour} which visits all of them, returning to the starting point, which minimises the distance travelled.
+\end{quote}
+
+The first known instance of this problem being posed was in 1832 by an author cited only as ``old clerk traveller''\cite{jal}.
+
+The problem was formalized by mathematician Karl Menger in the 1930s\cite{lotz2014losung}. Translated into English\cite{schrijver2005history}, Menger described the problem in the following way.
+
+\begin{quote}
+  We denote by messenger problem (since in practice this question should be solved by each postman, anyway also by many travelers) the task to find, for finitely many points whose pairwise distances are known, the shortest route connecting the points. Of course, this problem is solvable by finitely many trials. Rules which would push the number of trials below the number of permutations of the given points, are not known. The rule that one first should go from the starting point to the closest point, then to the point closest to this, etc., in general does not yield the shortest route.
+\end{quote}
+
+To this day, Menger remains correct in his claim that no known algorithm exists to find the optimal solution, faster than trying every possible tour. Each tour corresponds to a certain permutation of the cities, so if there are $n$ cities, there are $n!$ possible tours, and so the time complexity of this brute-force algorithm is at best $\mathcal{O}(n!)$.
+
+\section{A Definition of the Discrete Travelling Salesman Problem}
+
+Many variations of the Travelling Salesman Problem exist. For the purposes of this dissertation, and to avoid ambiguity, we will define the problem rigorously in this section
+
+\begin{align*}
+  \textrm{Given:} & \\
+  &\textrm{A finite set }V\textrm{ of }n\textrm{ vertices for some }n\in\mathbb{N} \\ \\
+  &\textrm{A total function }C : V^2\rightarrow\mathbb{R} \\
+  &\textrm{ such that }\forall v \in V.\; C(v,v)=0 \\
+  &\textrm{ and }\forall u,v \in V.\; C(u,v)=C(v,u) \\
+  \textrm{Find:} & \\
+  &\textrm{A permutation (allowing repetition) }T\textrm{ of }V \\
+  &\textrm{ with }m:=\left|T\right| \\
+  &\textrm{ and }T_i\textrm{ denotes the }i\textrm{\textsuperscript{th} element of }T\textrm{ for any }0\leq i\in \mathbb{N}<m \\
+  &\textrm{ and }\hat{C}:=C(T_{m-1},T_0)+\sum_{i=0}^{m-2}C(T_i,T_{i+1}) \\
+  &\textrm{ such that }\forall v\in V.\; v\in T \\
+  &\textrm{ and }\hat{C}\textrm{ is minimised }
+\end{align*}
+
+We will refer to this problem as the \idx{Discrete Travelling Salesman Problem} (\idx{DTSP}).
+
+An instance of the DTSP can be parameterised by $(V,C)$, and the solution is $T$. If $T$ really does minimise $\hat{C}$, then we call this solution ``\idx{optimal}''. However, it is still useful to consider suboptimal tours. Tours form a total order, with $T\leq T'$ meaning that the value of $\hat{C}$ for tour $T$ is less than or equal to that of $T'$. We will interchangeably refer to this relation as $T$ being ``at least as good as'' $T'$. In this total order, the optimal solution is the least element. In future, when we refer to \textit{the} solution of a DTSP instance, this refers to any of the optimal solutions. When instead we refer to \textit{a} solution with the aim of comparing their ``goodness'', this can include sub-optimal solutions.
+
+$V$ corresponds to the set of cities, and $C(u,v)$ represents the distance between city $u$ and city $v$. $T$ represents the tour through the cities, starting at $T_0$, and finally returning from $T_{m-1}$ to $T_0$. (Note that this forms a cycle --- the starting point doesn't really matter. The cycle can be shifted so that $T_0$ is any starting point you want, and the value of $\hat{C}$ will remain unchanged)
+
+$\hat{C}$ corresponds to the total distance travelled --- the sum of the distances between adjacent cities in $T$, plus the distance to return home from $T_{m-1}$ to $T_0$.
+
+We have stated that $T$ is allowed repetitions. This is to say that some cities can be visited more than once. Intuition suggests that any optimal tour will include no repetitions. However, that assumption relies on the \idx{distance metric} $C$ obeying the \idx{triangle inequality}, which we do not require.
+
+The triangle inequality can be described with the following equation:
+\begin{equation*}
+  \forall u,v,w\in V.\; C(u,w) \leq C(u,v) + C(v,w)
+\end{equation*} 
+
+Intuitionally, it will never be more costly to go from $u$ to $w$ directly, rather than go via $v$. We do not require that our distance metric obeys this inequality because this allows the DTSP to be a closer allegory to the CTSP which we will define in the next section.
+
+\todo[Illustration]
+
+\section{The Continuous Travelling Salesman Problem}
+
+Suppose you are a hiker, hiking (as one often does) in a mountainous region. You have several locations which you want to visit, and then you want to return home. Furthermore, you want to do so while climbing the least distance vertically.
+
+\todo[Illustration of height map]
+
+This problem could be represented by an instance of the DTSP. $V$ would be the set of locations you want to visit, including your starting point, and (assuming we count all vertical movement as climbing, whether up or down) $C(v,w)$ would be the minimum amount of climbing required to get from $v$ to $w$. The solution $T$ would then be the route you want to take.
+
+Unfortunately, one of the locations is at the top of a very steep and very tall mountain, and you would be satisfied to get \textit{near} it instead of reaching it exactly, if that means you can avoid a lot of climbing. The DTSP is no longer equipped to help you solve this. The inherent discreteness precludes the notion of being ``near'' a city.
+
+To combat this, we can generalise the DTSP. Instead of the cities being abstract discrete vertices, we will model them as being points in a \idx{continuous} space. Likewise, we can no longer characterise the distance between two cities as a single number, as it depends on the path taken between them. We will call this generalised problem the \idx{Continuous Travelling Salesman Problem} (\idx{CTSP}) and define it as follows:
+
+\begin{align*}
+  \textrm{Given:} & \\
+  &\textrm{A continuous connected set }D \\ \\
+  &\textrm{A finite set }P\subset D \\ \\
+  &\textrm{A continuous total function }f : D\rightarrow\mathbb{R} \\ \\
+  &\textrm{A continuous total function }t : D^2\rightarrow\mathbb{R} \\
+  &\textrm{ such that }\forall x \in D.\; t(x,x)=0 \\
+  &\textrm{ and }\forall x,y \in D.\; t(x,y)=t(y,x) \\
+  \textrm{Find:} & \\
+  &\textrm{A closed loop }L\subseteq D \\
+  &\textrm{ with }F:=\int_{L}f(\mathbf{s})\;d\mathbf{s} \\
+  &\textrm{ and }T:=\sum_{p \in P} \min_{l\in L}{t(p,l)} \\
+  &\textrm{ and }C':=F+T \\
+  &\textrm{ such that }C'\textrm{ is minimised }
+\end{align*}
+
+An instance of the CTSP is parameterised by $(D,P,f,t)$ and the solution is $L$. Much like the DTSP, if $L$ truly does minimise $C'$, then $L$ is an optimal solution, but other non-optimal solutions exist, forming a total order.
+
+$D$ is the \idx{domain} in which our points of interest reside. $P$ is the set of points we want to visit, and is analogous to $V$ in the definition of the DTSP. $L$ gives us the route to reach (or get close to) all of the points in $P$, and then return home.
+
+$f(x)$ is the \idx{cost density function}. It represents the cost per unit distance of travelling through an arbitrarily small neighbourhood around $x$. Furthermore, if we have a path (or \idx{contour}) through $D$, the total cost of travelling along the path can be calculated as the integral of $f$ along that path. This is loosely analogous to $C$ from the definition of the DTSP, except instead of telling us the cost of travelling between two points, $f$ allows us to calculate the cost of moving along a path. This is the meaning behind $F$ --- the total cost of travelling along $L$.
+
+Unlike with the DTSP however, solutions to the CTSP can accrue cost in more than one way. The first way (captured by $F$) is to move through high-cost-density areas. The other way is by not getting close enough to the points in $P$. This is the motivation behind defining the distance metric $t$. Suppose you have a point $p\in P$, but instead of reaching it, the closest you get it some other point $x\in D$, then $t(p,x)$ tells you the additional cost incurred. We will refer to this cost as a ``\idx{near-miss tax}''.
+
+To calculate the near-miss tax a solution $L$ will incur from a point $p\in P$, we take the minimum distance (according to $t$) from $p$ to any point on $L$.
+
+$T$, therefore, is the sum of the near-miss tax for each of the points in $P$.
+
+The total cost of the solution is $C'$, the sum of $F$ and $T$.
+
+\todo[Illustration]
+
+The remainder of this dissertation will explore the $CTSP$, and find algorithms which approximate the optimal solutions.

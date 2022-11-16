@@ -8,6 +8,9 @@
 \usepackage{imakeidx}
 \usepackage[backend=biber]{biblatex}
 \usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
 
 \raggedbottom
 \sloppy
@@ -15,6 +18,8 @@
 \widowpenalty1000%
 
 \renewcommand{\baselinestretch}{1.1}
+\setlength{\parindent}{10pt}
+\setlength{\parskip}{10pt}
 
 \addbibresource{refs.bib}
 \makeindex[intoc]
@@ -22,6 +27,7 @@
 \begin{document}
 
 \newcommand{\todo}[1][Fill this in]{\textcolor{red}{\textbf{\texttt{// TODO: #1}}}}
+\newcommand{\idx}[1]{\index{#1}#1}
 
 \input{title.tex}
 \input{declaration_of_originality.tex}
