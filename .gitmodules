@@ -1,0 +1,3 @@
+[submodule "Advanced Data Science/Assessment/module"]
+	path = Advanced Data Science/Assessment/module
+	url = git@github.com:slippedandmissed/ads-assessment.git
