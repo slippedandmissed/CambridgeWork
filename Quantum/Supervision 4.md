@@ -67,9 +67,11 @@ $$
 =(a\ket{0} + b\ket{1})\bigotimes(c\ket{00} + d\ket{10}) \\
 =ac\ket{000} + ad\ket{010} + bc\ket{100} + bd\ket{110}
 $$
+
 $$
 \ket{\phi_1} = ac\ket{000} + ad\ket{010} + bc\ket{101} + bd\ket{111}
 $$
+
 $$
 \ket{\phi_2} = ac\ket{000} + ad\ket{011} + bc\ket{101} + bd\ket{110}
 $$
